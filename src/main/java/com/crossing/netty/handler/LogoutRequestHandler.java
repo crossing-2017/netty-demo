@@ -19,6 +19,9 @@ public class LogoutRequestHandler extends SimpleChannelInboundHandler<LogoutRequ
   protected void channelRead0(ChannelHandlerContext ctx,
       LogoutRequestPacket logoutRequestPacket) throws Exception {
 
+
+    // todo 业务逻辑
+
     ChannelUtil.unBindUser(ctx.channel());
 
     LogoutResponsePacket logoutResponsePacket = new LogoutResponsePacket();

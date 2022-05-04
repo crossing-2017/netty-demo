@@ -25,6 +25,9 @@ public class LoginRequestHandler extends SimpleChannelInboundHandler<LoginReques
 
     LoginResponsePacket loginResponsePacket = new LoginResponsePacket();
 
+
+    // todo 业务逻辑
+
     User user = new User();
 
     log.info("登录成功,user={}", JSON.toJSONString(user));
