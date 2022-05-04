@@ -1,0 +1,14 @@
+server:
+  # 端口号
+  port: 8080
+  tomcat:
+    uri-encoding: utf-8
+
+netty:
+  tcp:
+    port: 8888
+  websocket:
+    path: /demo
+    port: 9999
+    http-object-aggregator:
+      max-content-length: 65536
